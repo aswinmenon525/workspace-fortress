@@ -1,0 +1,17 @@
+# Arduino build artifacts
+build/
+*.bin
+*.elf
+*.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+*.code-workspace
+
+# Sensitive config — never commit real credentials
+secrets.h
+config_local.h
