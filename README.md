@@ -106,6 +106,16 @@ To avoid high-contrast computer vision strain (working on a bright screen in a p
 
 \---
 
+##  Tech Stack
+
+| Layer | Tool |
+| :--- | :--- |
+| Microcontroller Firmware | C++ / Arduino IDE |
+| Web Dashboard UI | Antigravity AI (Vibe Coding) |
+| Backend API | Flask (Python) |
+| Hardware Protocol | ESP32 WebServer (HTTP/JSON) |
+| Sensor Libraries | DHT, ESP32Servo |
+
 ##  Privacy Architecture
 
 All processing occurs entirely on-device. No camera, no cloud API, no data exfiltration. The 7-day analytics summary is stored in browser `localStorage` — encrypted and confined to the local machine. The ESP32 HTTP server is LAN-bound and never exposed to the public internet.
