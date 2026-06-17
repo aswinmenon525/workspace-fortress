@@ -6,30 +6,23 @@ To ensure 100% video and data privacy, the entire ecosystem relies strictly on n
 
 \---
 
-##  System Demo
-
-
-
-
-\### Circuit \& Hardware Setup
-
-!\[Circuit Photo](schematics/circuit\_photo.jpg)
+## 📸 System Demo
 
 ### Monitoring Dashboard
 
-!\[Monitoring Dashboard](docs/screenshots/dashboard\_monitoring.png)
+![Monitoring Dashboard](docs/screenshots/dashboard_monitoring.png)
 
 *Real-time telemetry — posture distance, thermal readings, lux analytics, pomodoro sync, wellness score, and live session audit logs.*
 
 ### Presence Detection Alert
 
-!\[Presence Detect Failure](docs/screenshots/presence\_detect\_alert.png)
+![Presence Detect Failure](docs/screenshots/presence_detect_alert.png)
 
 *Automatic focus sprint pause triggered when operator absence exceeds 10 seconds. Browser push notification issued simultaneously.*
 
-### Settings \& Log Audits
+### Settings & Log Audits
 
-!\[Settings and Logs](docs/screenshots/settings\_logs.png)
+![Settings and Logs](docs/screenshots/settings_logs.png)
 
 *Hardware link configuration, OTA calibration sliders, timestamped system security log stream, and 7-day local privacy analytics summary.*
 
