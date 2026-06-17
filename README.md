@@ -6,7 +6,7 @@ To ensure 100% video and data privacy, the entire ecosystem relies strictly on n
 
 \---
 
-## 📸 System Demo
+##  System Demo
 
 
 
@@ -31,7 +31,7 @@ To ensure 100% video and data privacy, the entire ecosystem relies strictly on n
 
 \---
 
-## 📊 Core Architecture \& Pin Map
+##  Core Architecture \& Pin Map
 
 The system separates its physical components into three functional layers, isolating low-current CMOS logic lines from high-current inductive mechanical loads.
 
@@ -47,33 +47,33 @@ The system separates its physical components into three functional layers, isola
 
 \---
 
-## ⚙️ Implemented Rule Engine \& System Parameters
+##  Implemented Rule Engine \& System Parameters
 
 The background `loop()` coordinates four automated safety modules without running blocking code delays:
 
-### ⏱️ 1. Smart Pomodoro Sync
+###  1. Smart Pomodoro Sync
 
 Manages an isolated 25-minute work sprint and 5-minute break sequence. The frontend telemetry loop queries the on-chip HTTP server at `/readSensors` every 1000ms. If a user stands up or completely leaves the radar sweet spot for more than 10 continuous seconds during a focus sprint, it triggers an automation breakdown, records a distraction event, drops the mode to idle, and sounds a warning tone.
 
-### 🧘 2. Biomechanical \& Static Fatigue Tracking
+###  2. Biomechanical \& Static Fatigue Tracking
 
 * **AOA Proximity Guard:** Detects if a user slouches closer than 50 cm. It grants a 3-second buffer window before pulsing a tactile vibration reminder.
 * **Static Stiff Monitor:** Prolonged fixed sitting creates deep fatigue. If body movement shifts by less than 3 cm over 20 continuous minutes, the mechanical status needle swings to its 45° break zone and delivers a firm 1-second physical shake.
 
-### 🌡️ 3. Layered Thermal Safety Matrix
+###  3. Layered Thermal Safety Matrix
 
 Productivity declines rapidly above 25°C, with severe cognitive accuracy degradation at 28°C+.
 
 * **25°C to 29°C:** Sounds a polite double-chirp tone via the piezo channel once every 5 minutes as a microclimate warning.
 * **≥ 30°C:** Triggers an emergency system override, swinging the status servo to 180° and latching the high-output active siren.
 
-### 💡 4. Asymmetric Optical Contrast Guard
+###  4. Asymmetric Optical Contrast Guard
 
 To avoid high-contrast computer vision strain (working on a bright screen in a pitch-black room), the logic checks the LDR sensor. If focus mode is running and ambient illuminance drops below a raw ADC value of 1250, a non-blocking timer triggers a three-tone descending alert chime once every 5 minutes.
 
 \---
 
-## 🛠️ Installation \& Verification
+##  Installation \& Verification
 
 1. Clone this repository to your local directory.
 2. Open `firmware/workspace\_fortress.ino` within the Arduino IDE.
@@ -87,7 +87,7 @@ To avoid high-contrast computer vision strain (working on a bright screen in a p
 
 \---
 
-## 📦 Bill of Materials
+##  Bill of Materials
 
 |Component|Model|Qty|
 |-|-|:-:|
@@ -106,26 +106,27 @@ To avoid high-contrast computer vision strain (working on a bright screen in a p
 
 \---
 
-## 🔒 Privacy Architecture
+##  Privacy Architecture
 
 All processing occurs entirely on-device. No camera, no cloud API, no data exfiltration. The 7-day analytics summary is stored in browser `localStorage` — encrypted and confined to the local machine. The ESP32 HTTP server is LAN-bound and never exposed to the public internet.
 
 \---
 
-## 🏆 Project Status
+##  Project Status
 
 |Milestone|Status|
 |-|-|
-|Firmware state machine|✅ Complete|
-|Flask backend integration|✅ Complete|
-|Web dashboard (HTML/JS)|✅ Complete|
-|OTA calibration via sliders|✅ Complete|
-|Session log audit stream|✅ Complete|
-|Hardware assembly (breadboard)|🔧 In Progress|
+|Firmware state machine|Complete|
+|Flask backend integration|Complete|
+|Web dashboard (HTML/JS)|Complete|
+|OTA calibration via sliders|Complete|
+|Session log audit stream|Complete|
+|Hardware assembly (breadboard)|Complete|
 
 \---
 
-## 👤 Author
+##  Author
+ASWIN MENON 
 
 **Aswin Menon** — ECE, VIT Vellore  
 Embedded Systems | Edge AI | IoT  
