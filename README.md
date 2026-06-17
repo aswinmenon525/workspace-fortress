@@ -7,7 +7,7 @@ To ensure 100% video and data privacy, the entire ecosystem relies strictly on n
 \---
 ### Circuit & Hardware Setup
 
-![Circuit Photo](docs/screenshots/circuit1.jpeg)
+![Circuit Photo](docs/screenshots/circuit11.jpeg)
 
 ##  System Demo
 
