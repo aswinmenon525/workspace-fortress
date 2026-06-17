@@ -6,7 +6,7 @@ To ensure 100% video and data privacy, the entire ecosystem relies strictly on n
 
 \---
 
-## 📸 System Demo
+##  System Demo
 
 ### Monitoring Dashboard
 
