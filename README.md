@@ -5,6 +5,9 @@ An embedded workspace monitor designed around an asynchronous C++ state machine 
 To ensure 100% video and data privacy, the entire ecosystem relies strictly on non-optical radar tracking arrays and edge processing. It operates completely independently of external cloud services or camera-based tracking networks.
 
 \---
+### Circuit & Hardware Setup
+
+![Circuit Photo](schematics/circuit1.jpg)
 
 ##  System Demo
 
